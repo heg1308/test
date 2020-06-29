@@ -1,0 +1,192 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>201606010 PHP</title>
+
+  <style>
+    @font-face {
+      font-family: 'MapoFlowerIsland';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'GmarketSansBold';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'GmarketSansMedium';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'GmarketSansLight';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    #head {
+      width: 100%;
+      margin: 0;
+      font-family: "GmarketSansBold";
+    }
+
+    header {
+      width: 100%;
+      height: 100px;
+      background-color: #13bb0a;
+    }
+
+    section {
+      width: 100%;
+      height: 1000px;
+      float: left;
+      background-color: whitesmoke;
+      vertical-align: middle;
+    }
+
+    .menubar {
+      border: none;
+      border: 0px;
+      margin: 0px;
+      padding: 0px;
+      font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .menubar ul {
+      background: rgb(109, 109, 109);
+      height: 50px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menubar li {
+      float: left;
+      padding: 0px;
+    }
+
+    .menubar li a {
+      background: rgb(109, 109, 109);
+      color: #cccccc;
+      display: block;
+      font-weight: normal;
+      line-height: 50px;
+      margin: 0px;
+      padding: 0px 25px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .menubar li a:hover,
+    .menubar ul li:hover a {
+      background: rgb(71, 71, 71);
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+
+    .menubar li ul {
+      background: rgb(109, 109, 109);
+      display: none;
+      /* 평상시에는 드랍메뉴가 안보이게 하기 */
+      height: auto;
+      padding: 0px;
+      margin: 0px;
+      border: 0px;
+      position: absolute;
+      width: 200px;
+      z-index: 200;
+      /*top:1em;
+ /*left:0;*/
+    }
+
+    .menubar li:hover ul {
+      display: block;
+      /* 마우스 커서 올리면 드랍메뉴 보이게 하기 */
+    }
+
+    .menubar li li {
+      background: rgb(109, 109, 109);
+      display: block;
+      float: none;
+      margin: 0px;
+      padding: 0px;
+      width: 200px;
+    }
+
+    .menubar li:hover li a {
+      background: none;
+    }
+
+    .menubar li ul a {
+      display: block;
+      height: 50px;
+      font-size: 12px;
+      font-style: normal;
+      margin: 0px;
+      padding: 0px 10px 0px 15px;
+      text-align: left;
+    }
+
+    .menubar li ul a:hover,
+    .menubar li ul li:hover a {
+      background: rgb(71, 71, 71);
+      border: 0px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .menubar p {
+      clear: left;
+    }
+
+    #head {
+      background-color: gray;
+      line-height: 110px;
+      text-align: center;
+      font-size: 64px;
+    }
+  </style>
+</head>
+
+<body>
+  <header id="head">
+    PHP
+  </header>
+  <div class="menubar">
+    <ul>
+      <li><a href="#">홈</a></li>
+      <li><a href="#">DataBase</a>
+        <ul>
+          <li><a href="Database/input.php" target="disp-area">성적입력</a></li>
+          <li><a href="Database/dbtools.php" target="disp-area">DB Tools</a></li>
+        </ul>
+      </li>
+      <li><a href="#">고객관리</a>
+        <ul>
+          <li><a href="Member/login.php" target="disp-area">로그인/회원가입</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <section>
+    <iframe name="disp-area" style="width: 100%; height:100%"></iframe>
+  </section>
+</body>
+
+</html>
