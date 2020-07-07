@@ -79,6 +79,14 @@
         margin-bottom: 15px;
         font-size: 50px;
     }
+
+    .g-recaptcha{
+        display: inline;
+        position: relative;
+        left: 100px;
+        margin-top: 50px;
+    }
+
     </style>
     <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 </head>
@@ -96,7 +104,7 @@
                 <td><input type="text" calss="text" name="id" id="id" placeholder="아이디"></td>
             </Tr>
             <Tr>
-                <td><input type="text" name="password" id="password" placeholder="비밀번호"></td>
+                <td><input type="password" name="password" id="password" placeholder="비밀번호"></td>
             </Tr>
             <Tr>
                 <td><input type="radio" value="남" name="fix"><span>남</span>
@@ -114,6 +122,9 @@
             </Tr>
             <td><input type="text" id="addr_detail" name="addr_detail" placeholder="상세주소"></td>
             </Tr>
+            <tr>
+                <td><div class="g-recaptcha" data-sitekey="6Lf9ga4ZAAAAAE4nhIhJLpLyoix1dzV9IYXF4j-N"></div></td>
+            </tr>
             <tr>
                 <td colspan="5" ><input type="submit" id="search" style="width: 100px">
                 <input type="button" id="search" style="width: 100px" value="취소" class="cancel"></td>
@@ -172,6 +183,7 @@
     }
     </script>
 </body>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script>

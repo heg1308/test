@@ -58,12 +58,9 @@ body {
 
     margin-left: auto;
     margin-right: auto;
-
-    transition: 0.25s;
 }
 
 .id:focus{
-  width: 400px;
   border-color: #2ecc71;
 }
 
@@ -103,7 +100,7 @@ h1 {
                 <form action="login_check.php" method="post" id="frm1">
                     <h1>HALLO!</h1>
                     <input type='text' name='id' class='id' placeholder="아이디" require=true>
-                    <input type='text' name='password' class='id' placeholder="비밀번호" require=true>
+                    <input type='password' name='password' class='id' placeholder="비밀번호" require=true>
                     <input type='button' class='button' id="login" value='로그인'>
                     <input type='button' class='button' id="join" value='회원가입'>
                 </form>

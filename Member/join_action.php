@@ -1,4 +1,13 @@
 <?
+   $url = 'https://www.google.com/recaptcha/api/siteverify?secret=6Lf9ga4ZAAAAAML2X5rNfW4xv0V1Z9jtpIFhAL_g&response='.$_POST['g-recaptcha-response'];
+   $flag = json_decode(file_get_contents($url));
+   if (!$flag->success) {
+      // 예외처리 
+      echo "<script> alert('인증에 실패하였습니다.'); 
+      location='login.php';
+      </script>";
+      exit;
+   }
    $id=$_POST['id'];
    $password=$_POST['password'];
    $fix=$_POST['fix'];
